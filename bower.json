@@ -1,0 +1,21 @@
+{
+  "name": "jQuery-rwdImageMaps",
+  "version": "0.1.6",
+  "description": "Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize",
+  "main": ["jquery.rwdImageMaps.js"],
+  "ignore":"node_modules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZacWolf/jQuery-rwdImageMaps"
+  },
+  "authors": [
+    "Matt Snow <matt@mattsnow.com> (http://mattsnow.com)"
+    ,"Zac Morris <zac@zacwolf.com> (http://zacwolf.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ZacWolf/jQuery-rwdImageMaps",
+  "devDependencies": {
+    "jquery": "~2.0.0"
+	"jquery-ui": "~2.0.0"
+  }
+}

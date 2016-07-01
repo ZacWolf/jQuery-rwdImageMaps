@@ -1,0 +1,16 @@
+<project default="deploy" basedir=".">
+	<property environment="env"/>
+	<target name="build" description="Calls the GruntBuild from Eclipse">
+		<sequential>
+			<exec executable="${env.NODE_HOME}/grunt.cmd" osfamily="winnt" />
+		</sequential>
+	</target>
+	<target name="copy" description="Copies files to zacwolf.com.home project">
+		<copy todir="../../_GITREPOS/zacwolf.com.home/war/jsframeworks/jQuery-rwdImageMaps/">
+			<fileset dir="./">
+				<filename name="jquery.rwdImageMaps*.js"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="deploy" depends="build,copy"></target>
+</project>
